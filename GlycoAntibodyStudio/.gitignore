@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Data & Output
+output/*
+!output/.gitkeep
+temp/
+*.pdb
+*.pdbqt
+
+# Environment
+.venv/
+env/
+.env

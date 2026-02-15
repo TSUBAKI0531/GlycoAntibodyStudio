@@ -1,0 +1,12 @@
+streamlit
+biopython
+requests
+numpy
+pandas
+matplotlib
+plotly
+fpdf
+rdkit
+meeko
+anarci @ git+https://github.com/jakeppwilliams/ANARCI.git
+# openmm, pdbfixer, anarci は conda でのインストールを推奨
