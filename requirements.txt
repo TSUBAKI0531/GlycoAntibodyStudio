@@ -8,5 +8,5 @@ plotly
 fpdf
 rdkit
 meeko
-anarci-cidara
+anarci @ git+https://github.com/oxpig/ANARCI.git
 # openmm, pdbfixer, anarci は conda でのインストールを推奨
