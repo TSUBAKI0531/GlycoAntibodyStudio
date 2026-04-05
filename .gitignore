@@ -1,0 +1,78 @@
+# ============================================
+# GlycoAntibody Studio - .gitignore
+# ============================================
+
+# ── Python ──────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# ── Virtual Environment ─────────────────────
+.venv/
+venv/
+env/
+.conda/
+
+# ── IDE / Editor ────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS Files ────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Streamlit ───────────────────────────────
+.streamlit/
+
+# ── Jupyter Notebook ────────────────────────
+.ipynb_checkpoints/
+
+# ── Structural Data (large binary files) ────
+# PDB / mmCIF は大きいためデフォルト除外
+*.pdb
+*.cif
+*.pdbqt
+*.sdf
+*.mol2
+
+# data/ 配下の参照構造のみ追跡を許可
+!data/
+!data/*.pdb
+!data/*.cif
+
+# ── Docking / Simulation Outputs ────────────
+*.dlg
+*.dpf
+*.gpf
+*.map
+*.fld
+*.xyz
+logs/
+tmp/
+output/
+
+# ── Reports (自動生成物) ────────────────────
+*.pdf
+!docs/*.pdf
+
+# ── Secrets / Config ────────────────────────
+.env
+*.json
+!sample_config.json
+
+# ── Large / Binary ──────────────────────────
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.ckpt
+*.pt
+*.onnx

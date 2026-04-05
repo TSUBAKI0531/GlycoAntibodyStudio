@@ -1,0 +1,35 @@
+# ============================================
+# GlycoAntibody Studio - Requirements
+# ============================================
+
+# ── Core Framework ──────────────────────────
+streamlit>=1.30.0
+
+# ── Data Processing ─────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+
+# ── Molecular Biology / Chemistry ───────────
+biopython>=1.81
+rdkit>=2023.03.1
+meeko>=0.5.0                  # AutoDock Vina用リガンド準備
+
+# ── Visualization ───────────────────────────
+plotly>=5.15.0
+matplotlib>=3.7.0
+py3Dmol>=2.0.0
+stmol>=0.0.9                  # Streamlit用3D分子ビューア
+
+# ── Report Generation ───────────────────────
+fpdf2>=2.7.0                  # PDF レポート出力
+xlsxwriter>=3.1.0             # Excel エクスポート
+
+# ── HTTP / API ──────────────────────────────
+requests>=2.31.0              # RCSB PDB 構造取得
+
+# ── Antibody Numbering ──────────────────────
+anarci @ git+https://github.com/oxpig/ANARCI.git
+
+# ── Optional: conda install recommended ─────
+# conda install -c conda-forge openmm pdbfixer
+# conda install -c bioconda hmmer muscle
